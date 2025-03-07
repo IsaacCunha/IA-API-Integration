@@ -1,12 +1,6 @@
 <<<<<<< HEAD
 # Ai Integration
 
-![GitHub repo size](https://img.shields.io/github/repo-size/IA-API-Integration/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/IA-API-Integration/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/IA-API-Integration/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/IA-API-Integration/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/IA-API-Integration/README-template?style=for-the-badge)
-
 > PROJECT WITH THE OBJECTIVE OF CREATING VIDEO SUMMARIES FROM URLs
 
 ### Adjustments and improvements
@@ -23,8 +17,8 @@ The project is still under development and the next updates will focus on the fo
 
 Before you begin, make sure you meet the following requirements:
 
-- Você instalou a versão mais recente de `<nodeJs/ dependências / Ollama / Model (deepseek-r1:8b)>`.
-- Você tem uma máquina `<Windows / Linux / Mac>`.
+- You have installed the latest version of `<nodeJs/ dependencies / Ollama / Model (deepseek-r1:8b)>`.
+- You have a `<Windows / Linux / Mac>` machine.
 
 ## 🚀 Installing <Ai_Integration>
 
