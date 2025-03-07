@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat com Ollama</title>
+</head>
+<body>
+  <h1>Chat com Ollama</h1>
+  <form id="chat-form">
+    <label for="message">Pergunte algo ao chat:</label><br>
+    <input type="text" id="message" name="message" required>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Resposta:</h2>
+  <p id="reply"></p>
+
+  <script>
+    const form = document.getElementById('chat-form');
+    const replyElement = document.getElementById('reply');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const message = document.getElementById('message').value;
+
+      try {
+        const response = await fetch('http://localhost:3000/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ message })
+        });
+
+        const data = await response.json();
+        replyElement.textContent = data.reply || 'Erro ao obter resposta.';
+      } catch (error) {
+        replyElement.textContent = 'Erro ao se comunicar com o servidor.';
+      }
+    });
+  </script>
+</body>
+</html>
